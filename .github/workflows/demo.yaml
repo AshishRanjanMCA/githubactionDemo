@@ -9,12 +9,14 @@ jobs:
 
   test:
     runs-on: ubuntu-latest
+    needs: build
     steps:
       - name: test phase
         run: echo "Running Test phase"
 
   delopy:
     runs-on: ubuntu-latest
+    needs: test
     steps:
       - name: Deploye the app
         run: echo "Deploying the app"
