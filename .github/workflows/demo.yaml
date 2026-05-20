@@ -11,10 +11,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: test phase
-      run: echo "Running Test phase"
+        run: echo "Running Test phase"
 
   delopy:
     runs-on: ubuntu-latest
-    -name: Deloy the App
-    run: echo "Deploying the App"
-    
+    steps:
+      - name: Deploye the app
+        run: echo "Deploying the app"
+
+        
