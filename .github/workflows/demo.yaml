@@ -1,6 +1,6 @@
 name: Hello World
 on: push
-  build:
+build:
     runs-on: ubuntu-latest
     steps:
       - name: Build Step
